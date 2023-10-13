@@ -54,8 +54,8 @@ function theme_container()
 {
     static $container;
     if (!$container) {
-        $init = require_once dirname(__DIR__) . '/init-container.php';
-        $config = require_once dirname(__DIR__) . '/config.php';
+        $init = require_once dirname(__DIR__) . '/core/init-container.php';
+        $config = require_once dirname(__DIR__) . '/core/config.php';
         $container = new Container($init($config));
     }
     return $container;
