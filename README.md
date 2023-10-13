@@ -43,7 +43,7 @@ Create specific function at file `src/functions.php`
 ```php
 <?php
 
-namespace YourVendor\YourProduct
+namespace YourVendor\YourProduct;
 
 use WPShop\Container\Psr11\Container;
 
@@ -54,8 +54,8 @@ function theme_container()
 {
     static $container;
     if (!$container) {
-        $init = require_once dirname(__DIR__) . '/init-container.php'
-        $config = require_once dirname(__DIR__) . '/config.php'
+        $init = require_once dirname(__DIR__) . '/init-container.php';
+        $config = require_once dirname(__DIR__) . '/config.php';
         $container = new Container($init($config));
     }
     return $container;
