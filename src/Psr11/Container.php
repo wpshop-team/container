@@ -2,9 +2,10 @@
 
 namespace WPShop\Container\Psr11;
 
+use Psr\Container\ContainerInterface;
 use WPShop\Container\ServiceRegistry;
 
-class Container
+class Container implements ContainerInterface
 {
     /**
      * @var ServiceRegistry
