@@ -20,12 +20,12 @@ class Container implements ContainerInterface
         $this->registry = $registry;
     }
 
-    public function get(string $id)
+    public function get($id)
     {
         return $this->registry[$id];
     }
 
-    public function has(string $id): bool
+    public function has($id)
     {
         return isset($this->registry[$id]);
     }

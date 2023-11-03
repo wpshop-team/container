@@ -20,7 +20,7 @@ class ServiceLocator implements ContainerInterface
         }
     }
 
-    public function get(string $id)
+    public function get($id)
     {
         if (!isset($this->aliases[$id])) {
             throw new UnknownIdentifierException($id);
@@ -29,7 +29,7 @@ class ServiceLocator implements ContainerInterface
         return $this->registry[$this->aliases[$id]];
     }
 
-    public function has(string $id)
+    public function has($id)
     {
         return isset($this->aliases[$id]) && isset($this->registry[$this->aliases[$id]]);
     }
