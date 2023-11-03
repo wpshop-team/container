@@ -8,7 +8,7 @@
   ],
   "license": "WTFPL",
   "require": {
-    "php": ">=7.2.5",
+    "php": "^5.3 || >=7.2.5",
     "psr/container": "^1.1 || ^2.0"
   },
   "autoload": {
