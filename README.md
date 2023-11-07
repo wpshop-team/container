@@ -32,7 +32,7 @@ Example of `composer.json`
     }
   },
   "require": {
-    "php": ">=7.2",
+    "php": ">=5.4",
     "wpshop/container": "^1.0"
   }
 }
@@ -45,10 +45,11 @@ Create specific function at file `src/functions.php`
 
 namespace YourVendor\YourProduct;
 
-use WPShop\Container\Psr11\Container;
+use Psr\Container\ContainerInterface;
+use WPShop\Container\Container;
 
 /**
- * @return Container
+ * @return Container|ContainerInterface
  */
 function theme_container() 
 {
