@@ -32,8 +32,8 @@ Example of `composer.json`
     }
   },
   "require": {
-    "php": ">=5.4",
-    "wpshop/container": "^1.0"
+    "php": ">=7.2",
+    "wpshop/container": "^2.0"
   }
 }
 ```
