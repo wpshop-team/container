@@ -33,7 +33,7 @@ Example of `composer.json`
   },
   "require": {
     "php": ">=7.2",
-    "wpshop/container": "^1.2 || ^2.2"
+    "wpshop/container": "^1.3 || ^2.3"
   }
 }
 ```
